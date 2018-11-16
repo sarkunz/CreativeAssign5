@@ -13,7 +13,7 @@
 
 <body ng-app="meme" ng-controller="MainCtrl">
     <div class="headers" ng-click="titleClick()">
-        <h1 class="header">MEMEMEMEMEMEMEMEMEMEMEMEMEMEMEMEMEME</h1>
+        <h1 class="header" title="click me!">MEMEMEMEMEMEMEMEMEMEMEMEMEMEMEMEMEME</h1>
     </div>
     <div id="bigContainer">
         <div id="displaySide">
@@ -22,7 +22,7 @@
                     <div class="sideBySide">
                         <div class="topToBottom">
                             <div class="title">{{meme.name}}</div>
-                            <img class="memeImg" src={{meme.url}}/>
+                            <img class="memeImg" src={{meme.url}}>
                         </div>
                         <div class="topToBottom center">
                             <span class="glyphicon glyphicon-chevron-up" ng-click="incrementUpvotes(meme)"></span> {{meme.upvotes}}
